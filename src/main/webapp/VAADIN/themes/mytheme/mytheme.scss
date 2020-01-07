@@ -1,0 +1,207 @@
+// If you edit this file you need to compile the theme. See README.md for details.
+
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+//$v-font-size: 16px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+@import "../valo/valo.scss";
+
+@mixin mytheme {
+  @include valo;
+
+  // Insert your own theme rules here
+  
+  .advancedSearchLabel {
+  	text-align: right;
+  	color: white;
+  	padding-right: 6px;
+  }
+  
+  .questionLabel {
+  	text-align: center;
+  	color: white;
+  	font-weight: bold;
+  	font-style: italic;
+  	font-size: large;
+  	padding-top: 50px;
+  	padding-bottom: 20px;
+  }
+  
+  .questionLabel2 {
+  	text-align: center;
+  	color: white;
+  	font-weight: bold;
+  	font-style: italic;
+  	font-size: large;
+  	padding-top: 10px;
+  	padding-bottom: 20px;
+  }
+  
+  .centeredPanel1 {
+  	padding-top: 70px;
+  }
+  
+  .centeredPanel2 {
+  	padding-top: 20px;
+  }
+  
+  .testPanel {
+  	border: 1px solid slategray;
+  }
+  
+  .settingsPanel {
+  	border: 1px solid #708090;
+  }
+  
+  .pointerImage {
+  	padding-right: 40px;
+  }
+  
+  .wikiImage {
+  	padding-bottom: 60px;
+  }
+  
+  .testBackground {
+  	background: url("screenBackground.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .pageLayout {
+  	background: url("screenBackground.jpg") repeat center center fixed;
+  }
+  
+  .masterLayout {
+  	background: url("background.jpg") repeat center center fixed;
+  }
+  
+  .masterTab{
+    border: 4px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+  }
+  
+  .paperStack{
+    border: 4px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+  }
+  
+  .searchPanel {
+  	background: transparent;
+  	border-color: transparent;
+  }
+  
+  .v-tabsheet-searchTabs{
+        .v-tabsheet-tabitemcell{
+            .v-caption {
+                color: #fff;
+                font-size: small;
+            }
+        }
+    }
+    
+  .searchControls {
+  	background: transparent;
+  	border-top: 1px solid whitesmoke;
+  }
+  
+  .searchItem{
+    background: rgba(0,0,0,0.4);
+    border: 1px solid slategray;
+    border-radius: 6px;
+  }
+  
+  .searchItemHeader {
+  	color: whitesmoke;
+  	font-weight: bold;
+  	font-size: small;
+  }
+  
+  .searchItemDescription {
+  	color: slategray;
+  	font-weight: lighter;
+  	font-size: small;
+  }
+  
+  .searchItemCaption {
+  	color: steelblue;
+  	font-weight: normal;
+  	padding-bottom: 6px;
+  }
+  
+  .searchItemLabel {
+  	font-weight: lighter;
+  	padding-bottom: 6px;
+  }
+  
+  .searchField {
+  	background: #FFFFFF url("search.png") no-repeat 8px 10px;
+  	padding-left: 30px;
+  }
+  
+  .advancedSearchField {
+  	background: #FFFFFF url("search.png") no-repeat 8px 10px;
+  	padding-left: 30px;
+  	padding-right: 30px;
+  }  
+  
+  .settingsImage {
+      cursor: pointer;
+      padding-bottom: 10px;
+      padding-right: 10px;
+    }
+    
+   .settingsPanel {
+      background-color: gainsboro;
+    }
+  
+  .optionGroup {
+    padding:10px;
+  }
+  
+  .progressInfo {
+  	text-align: center;
+  	color: steelblue;
+  }
+  
+  .infoPanel {
+    border-top: 2px solid slategray;
+  }
+  
+  .noImageLabel {
+  	text-align: center;
+  }
+  
+  .pilotPointImagePage {
+    background-color: whitesmoke;
+  }
+}
